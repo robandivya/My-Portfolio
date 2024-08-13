@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+ 
+}
+
+
+/* About section start  */
+
+section{
+    height: 700px;
+    
+  }
+  
+  .about__container {
+    display: grid;
+    gap: 2rem;
+    
+  }
+  
+  .about__image {
+    overflow: hidden;
+  }
+  
+  .about__image img {
+    max-width: 350px;
+    margin-inline: auto;
+    border: 1rem solid var(--secondary-color-dark);
+    max-height: 400px;
+    border-radius: 50%;
+    
+    
+  }
+  
+  .about__content h4 {
+    max-width: 400px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    
+  }
+  
+  .about__content .section__description {
+    margin-bottom: 1rem;
+  }
+  
+  .about__content .section__description span {
+    color: var(--primary-color);
+  }
+  
+  .about__progress {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+  
+  .about__progress h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .about__progressbar {
+    position: relative;
+    isolation: isolate;
+    flex: 1;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+  
+    border-radius: 4px;
+  }
+  
+  .about__progressbar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+
+
+@media (width > 768px) { 
+    
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* justify-content: center; */
+  }
+}
+
+
